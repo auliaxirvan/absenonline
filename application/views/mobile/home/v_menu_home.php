@@ -218,7 +218,7 @@
             } else if (hari($jadwal_apel_hari_ini->tgl_apel) === "Rabu") {
                 $jenis_apel = "Olahraga";
             } else {
-                $jenis_apel = "Apel";
+                $jenis_apel = "Upacara";
             }
         ?>
            <div class="listview-title mt-2"><?= $jenis_apel; ?> Hari Ini (<?= tgl_indonesia($jadwal_apel_hari_ini->tgl_apel) ?>)</div>
