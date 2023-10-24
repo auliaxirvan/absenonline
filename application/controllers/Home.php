@@ -48,6 +48,9 @@ class Home extends Frontend_Controller
 			if (empty($cek_tidak_apel)) {
 				$this->data['jadwal_apel'] = $this->m_absen->jadwal_apel(date('Y-m-d'), $this->pengguna->dept_id, $this->pengguna->user_id);
 				$this->data['jadwal_apel_hari_ini'] = $this->m_absen->jadwal_apel(date('Y-m-d'), $this->pengguna->dept_id);
+
+				// Ditambah Febri
+				// $this->data['jadwal_upacara_hari_ini'] = $this->m_absen->jadwal_upacara(date('Y-m-d'), $this->pengguna->dept_id);
 			}
 
 			if ($this->data['absen_shift_hari_ini']->jam_kerja_status == "Shift") {

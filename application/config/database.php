@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
 /*
 | -------------------------------------------------------------------
@@ -80,6 +80,7 @@ $db['default'] = array(
 	'hostname' => '172.30.251.21',
 	'username' => 'postgres',
 	'password' => '%@#t3p3p3+%51k4p+2022@m44t3r++',
+	// 'database' => 'development',
 	'database' => 'sikapv2_master',
 	'dbdriver' => 'postgre',
 	'dbprefix' => '',

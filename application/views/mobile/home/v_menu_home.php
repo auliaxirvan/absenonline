@@ -94,13 +94,13 @@
                </div>
            </div>
        </div>
-       <?php if (!empty($jadwal_apel_hari_ini) && $jadwal_apel_hari_ini->name == "Wirid Pengajian Korpri") {
+       <?php if (!empty($jadwal_apel_hari_ini) && ($jadwal_apel_hari_ini->name == "Wirid Pengajian Korpri" || $jadwal_apel_hari_ini->name == "Upacara")) {
             if (hari($jadwal_apel_hari_ini->tgl_apel) === "Jumat") {
                 $jenis_apel = "Wirid";
             } else if (hari($jadwal_apel_hari_ini->tgl_apel) === "Rabu") {
                 $jenis_apel = "Olahraga";
             } else {
-                $jenis_apel = "Apel";
+                $jenis_apel = "Upacara";
             }
         ?>
            <div class="section mt-2">
